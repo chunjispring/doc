@@ -31,11 +31,13 @@ git init
 ```
 git status
 用来查看git下文件的状态
+git status -s 缩略的形式查看文件状态
 ```
 
 ```
 git add xxxx
 将文件从untracked状态到staged状态
+git add .  全部新增
 
 ```
 
@@ -56,6 +58,14 @@ git commit -m "xxxx"
 
 ```
 git log
-查看commit的记录
+查看commit的情况
+```
+
+```
+git diff
+不加参数即默认比较工作区与暂存区的修改
+
+git diff --staged: will only show changes to files in the "staged" area.(最后一次commit时暂存区的状态和现在的暂存区状态的对比)
+
 ```
 
