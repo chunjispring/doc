@@ -54,6 +54,12 @@ git commit -m "xxxx"
 
 
 
+## 从暂存区回到untracked状态
+
+```
+git rm  --cached 文件名
+```
+
 
 
 ## 记录查看log diff
@@ -71,6 +77,8 @@ git diff
 git diff --staged: will only show changes to files in the "staged" area.(最后一次commit时暂存区的状态和现在的暂存区状态的对比)
 
 git diff HEAD: will show all changes to tracked files. (git diff和git diff --staged内容的总和)
+
+git diff HEAD~1 :比较当前commit的版本和前一个版本的差异。如果要比较当前版本和前前一次的话数字改成2即可，依次类推。
 ```
 
 
